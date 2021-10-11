@@ -29,13 +29,13 @@
     </table>
 
     <p>
-        BMI this guy is <?php echo number_format(kira($berat, $tinggi)); ?>
+        BMI this guy is <?php echo number_format(bmi($berat, $tinggi)); ?>
     </p>
 </body>
 </html>
 
 <?php
-function kira($berat, $tinggi){
-    $bmi = $berat / ($tinggi * 2);
-    return $bmi;
+function bmi($berat, $tinggi){
+    $totalBMI = $berat / ($tinggi * 2);
+    return $totalBMI;
 }
